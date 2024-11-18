@@ -10,7 +10,7 @@ env:
 jobs:
   rustfmt:
     name: Rustfmt
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout the repository
@@ -22,7 +22,7 @@ jobs:
 
   clippy:
       name: Clippy
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-24.04
 
       steps:
         - name: Checkout the repository
@@ -34,7 +34,7 @@ jobs:
 
   tests:
     name: Tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout the repository
